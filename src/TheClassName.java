@@ -1,9 +1,14 @@
-public class TheClassName {
-    public static void theFirstMethodName(){
-        // Program Statement
+public class TheClassName{
+    public static void theFirstMethod(){
+        String name = "Mrinaal";
+        System.out.println("Hello," +" "+name);
     }
 
-    public static void theSecondMethodName() {
-        // Program Statement
+    public static void theSecondMethod(){
+        // the second program statement
+    }
+
+    public static void main(String[] args) {
+        theFirstMethod();
     }
 }

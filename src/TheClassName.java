@@ -1,9 +1,9 @@
 public class TheClassName {
     public static void theFirstMethodName(){
-        // Program Statement.
+        // Program Statement
     }
 
     public static void theSecondMethodName() {
-        // Program Statement.
+        // Program Statement
     }
 }

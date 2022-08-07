@@ -7,8 +7,6 @@ public class TheClassName {
     }
 
     public static void main(String[] args) {
-        theFirstMethod();
-        theSecondMethod();
+        System.out.println("Hello");
     }
 }
-

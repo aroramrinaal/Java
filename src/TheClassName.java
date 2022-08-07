@@ -7,7 +7,8 @@ public class TheClassName {
     }
 
     public static void main(String[] args) {
-        // variables go here
-        //instructions go here.
+        theFirstMethod();
+        theSecondMethod();
     }
 }
+

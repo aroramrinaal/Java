@@ -1,6 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        // first java program
-        System.out.println("Hello,World!");
+        int result = addTwoNums(3,4);
+        System.out.println(result);
+    }
+
+    public static int addTwoNums(int a,int b ){
+        return a+b;
     }
 }

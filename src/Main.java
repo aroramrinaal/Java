@@ -1,16 +1,21 @@
 public class Main{
     public static void main(String[] args) {
-        Bunny myBunny = new Bunny();
-        myBunny.age = 3;
-        myBunny.name = "Flopsy";
-        System.out.println(myBunny.name + " is " + myBunny.age);
+        int[] arr = new int[5];
+        arr[0] = 1;
+        arr[1] = 2;
+        arr[2] = 3;
+        arr[3] = 4;
+        arr[4] = 5;
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println(arr[i]);
+        }
     }
 }
 
-class Bunny{
-    int age;
-    String name;
-}
+// class Bunny{
+//     int age;
+//     String name;
+// }
 
 // Java Practice
 // OOPS In Java

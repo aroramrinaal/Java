@@ -1,25 +1,28 @@
 public class Main{
     public static void main(String[] args) {
-        Bunny myBunny = new Bunny();
-        myBunny.age = 3;
-        myBunny.name = "Boomer";
+        Tree myFavoriteOakTree = new Tree(25, 5, "Oak");
     }
 }
 
-class Bunny{
-    String name;
-    int age;
+class Tree{
+    double heightFt;
+    double trunkDiameterInches;
+    String treeType;
 
-    void hop(){
-
+    Tree(double heightFt,double trunkDiameterInches,String treeType){
+        this.heightFt = heightFt;
+        this.trunkDiameterInches = trunkDiameterInches;
+        this.treeType = treeType;
     }
-    void eat(String food){
 
+    void grow(){
+        this.heightFt = this.heightFt + 10;
+        this.trunkDiameterInches = this.trunkDiameterInches+1;
     }
-    void sleep(){
 
-    }
+
 }
+
 
 // Java Practice
 // OOPS In Java

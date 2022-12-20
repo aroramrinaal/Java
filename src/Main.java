@@ -25,4 +25,8 @@ class Employee{
     void getEmployeeInfo(){
         System.out.println(name+" is "+age+" years old and works for a salary of "+salary+" in "+location+".");
     }
+
+    void raiseSalary(){
+        this.salary = this.salary+10000;
+    }
 }

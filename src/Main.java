@@ -3,7 +3,9 @@
 
 
 public class Main{
-
+    public static void main(String[] args) {
+        
+    }
 }
 
 class Employee{
@@ -15,6 +17,8 @@ class Employee{
     Employee(String name,int age,int salary,String location){
         this.name = name;
         this.age = age;
-
+        this.salary = salary;
+        this.location = location;
     }
+
 }

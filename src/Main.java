@@ -5,7 +5,6 @@
 public class Main{
     public static void main(String[] args) {
         Employee employee1 = new Employee("Joe", 26, 50000, "Tempe");
-        System.out.println(employee1.getEmployeeName());
     }
 }
 
@@ -21,16 +20,6 @@ class Employee{
         this.salary = salary;
         this.location = location;
     }
-
-    public int getEmployeeAge(){
-        return age;
-    }
-
-    public String getEmployeeName(){
-        return name;
-    }
-
-
 
     public void getEmployeeInfo(){
         System.out.println(name+" is "+age+" years old and works for a salary of "+salary+" in "+location+".");

@@ -5,15 +5,15 @@
 public class Main{
     public static void main(String[] args) {
         Employee employee1 = new Employee("Joe", 26, 50000, "Tempe");
-        employee1.getEmployeeInfo();
+        System.out.println(employee1.getEmployeeName());
     }
 }
 
 class Employee{
-    String name;
-    int age;
-    int salary;
-    String location;
+    private String name;
+    private int age;
+    private int salary;
+    private String location;
 
     Employee(String name,int age,int salary,String location){
         this.name = name;
@@ -22,11 +22,21 @@ class Employee{
         this.location = location;
     }
 
-    void getEmployeeInfo(){
+    public int getEmployeeAge(){
+        return age;
+    }
+
+    public String getEmployeeName(){
+        return name;
+    }
+
+
+
+    public void getEmployeeInfo(){
         System.out.println(name+" is "+age+" years old and works for a salary of "+salary+" in "+location+".");
     }
 
-    void raiseSalary(){
+    public void raiseSalary(){
         this.salary = this.salary+10000;
     }
 }

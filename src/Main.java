@@ -4,7 +4,8 @@
 
 public class Main{
     public static void main(String[] args) {
-        
+        Employee employee1 = new Employee("Joe", 26, 50000, "Tempe");
+        employee1.getEmployeeInfo();
     }
 }
 
@@ -21,4 +22,7 @@ class Employee{
         this.location = location;
     }
 
+    void getEmployeeInfo(){
+        System.out.println(name+" is "+age+" years old and works for a salary of "+salary+" in "+location+".");
+    }
 }

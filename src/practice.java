@@ -1,25 +1,26 @@
-public class practice {
-    public static void main(String[] args) {
-        Engineer engineer1 = new Engineer();
-        engineer1.name = "Mrinaal";
-        System.out.println(engineer1.name);
-    }
+abstract class Animal{
+  abstract void animalSound();
+  public void eat(){
+    System.out.println("I am eating.");
+  }
 }
 
-
-
-class Employee{
-    int employeeId;
-    String name;
-    int age;
-    double salary;
+class Dog extends Animal{
+  public void animalSound(){
+    System.out.println("bark,bark!");
+  }
 }
 
-
-class Engineer extends Employee{
-    double bonus = 10000+salary;
+class Pig extends Animal{
+  public void animalSound(){
+    System.out.println("wee,wee!");
+  }
 }
 
-class Manager extends Employee{
-    double bonus = 20000+salary;
+ class practice{
+  public static void main(String[] args) {
+    Dog myDog = new Dog();
+    myDog.animalSound();
+    myDog.eat();
+  }
 }
